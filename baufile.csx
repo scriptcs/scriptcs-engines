@@ -76,7 +76,7 @@ bau
 
 void Configure(MSBuild msb, string target)
 {
-    msb.MSBuildVersion = "net45";
+    msb.MSBuildVersion = "vs14";
     msb.Solution = solution;
     msb.Targets = new[] { target, };
     msb.Properties = new { Configuration = "Release" };
